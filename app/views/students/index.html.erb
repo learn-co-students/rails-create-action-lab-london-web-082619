@@ -1,5 +1,7 @@
-<h2>Student List</h2>
+<h1>Index</h1>
+<%= link_to "Submit a new form?", new_student_path %>
 
+<h2>Student List</h2>
 <div>
 <% @students.each do |student|%>
   <div><%= link_to student.to_s, student_path(student) %></div>
